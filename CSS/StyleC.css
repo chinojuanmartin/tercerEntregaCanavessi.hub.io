@@ -241,8 +241,7 @@ width: 100%;
   .principal img{
     display: grid;
     grid-template-columns: 1fr;
-    width: 100%;
-  }
+    width: 100%;}
 
 
   .aboutTitulo h2 {
@@ -290,6 +289,5 @@ width: 100%;
   grid-template-columns: 1fr 1fr;
   padding: 20px;
 }
-
   }
 
