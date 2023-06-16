@@ -4,6 +4,14 @@
   box-sizing: border-box;
 }
 
+$mobile: 480px;
+$desktop: 1280;
+
+$font: Verdana, Geneva, Tahoma, sans-serif;
+$secondFont: 'Times New Roman', Times, serif;
+
+
+
 section {
   .principal {
     img {
@@ -31,7 +39,7 @@ article {
   }
 }
 
-
+section {
   #anillo,
   #pulcera,
   #colgante {
@@ -39,7 +47,7 @@ article {
     text-align: center;
     background-color: rgb(1, 2, 54);
     color: gray;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: $font;
     margin-top: 10px;
   }
 
@@ -59,7 +67,7 @@ article {
 section {
   .suscripcion {
     text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: $font;
     margin-top: 20px;
     background-color: black;
     padding: 5px;
@@ -105,7 +113,7 @@ section {
   color: rgb(250, 249, 249);
   text-align: center;
   padding: 20px;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: $secondFont
 }
 
 /* contacto pagina */
@@ -119,7 +127,7 @@ section {
     margin-top: 10px;
     background-color: black;
     color: gray;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: $font
   }
 
   li {
@@ -133,7 +141,7 @@ section {
     text-align: center;
     background-color: #4CAF50;
     color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: $font
   }
 
   .formulario {
@@ -170,7 +178,7 @@ section {
 }
 
 /* @media mobile */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: $mobile) {
   .principal img {
     display: grid;
     grid-template-columns: 1fr;
@@ -182,7 +190,7 @@ section {
       text-align: center;
       background-color: black;
       color: gray;
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-family: $font
     }
 
     .about {
@@ -203,8 +211,7 @@ section {
         margin-right: auto;
         text-align: center;
         line-height: 1.2;
-        font-family: 'Times New Roman', Times, serif;
-
+        font-family: $secondFont
         .aboutBoton a {
           color: white;
           text-decoration: none;
@@ -232,7 +239,7 @@ section {
       text-align: center;
       background-color: black;
       color: gray;
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-family: $font
     }
   }
 }
@@ -255,7 +262,7 @@ section {
       text-align: center;
       background-color: black;
       color: gray;
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-family: $font
       margin-top: 10px;
     }
   }
