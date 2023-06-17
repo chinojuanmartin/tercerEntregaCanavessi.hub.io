@@ -3,20 +3,18 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+$font: Verdana, Geneva, Tahoma, sans-serif; 
+$fontsec: 'Times New Roman', Times, serif; 
 $mobile: 480px;
-$desktop: 1280;
-
-$font: Verdana, Geneva, Tahoma, sans-serif;
-$secondFont: 'Times New Roman', Times, serif;
-
+$desktopmi: 481px;
+$desktopma: 1400px;
 
 
 section {
   .principal {
     img {
       width: 300px;
-      height: auto;
+      height: 10px;
     }
   }
 }
@@ -47,7 +45,7 @@ section {
     text-align: center;
     background-color: rgb(1, 2, 54);
     color: gray;
-    font-family: $font;
+    font-family: $font
     margin-top: 10px;
   }
 
@@ -67,7 +65,7 @@ section {
 section {
   .suscripcion {
     text-align: center;
-    font-family: $font;
+    font-family: $font
     margin-top: 20px;
     background-color: black;
     padding: 5px;
@@ -113,7 +111,7 @@ section {
   color: rgb(250, 249, 249);
   text-align: center;
   padding: 20px;
-  font-family: $secondFont
+  font-family: $fontsec
 }
 
 /* contacto pagina */
@@ -124,7 +122,6 @@ section {
   h2 {
     width: 100%;
     text-align: center;
-    margin-top: 10px;
     background-color: black;
     color: gray;
     font-family: $font
@@ -211,7 +208,8 @@ section {
         margin-right: auto;
         text-align: center;
         line-height: 1.2;
-        font-family: $secondFont
+        font-family: $fontsec
+
         .aboutBoton a {
           color: white;
           text-decoration: none;
@@ -245,7 +243,7 @@ section {
 }
 
 /* @media Desktop */
-@media (min-width: 481px) and (max-width: 1280px) {
+@media (min-width: $desktopmi) and (max-width: $Sdesktopma) {
   .navbar {
     width: 100%;
   }
