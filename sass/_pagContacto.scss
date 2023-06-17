@@ -1,0 +1,67 @@
+/* contacto pagina */
+.contacto {
+    display: grid;
+    margin-top: 50px;
+  
+    h2 {
+      @if $titulo ==dark {
+      width: 100%;
+      text-align: center;
+      background-color: black;
+      color: gray;
+      font-family: $font
+    } @else if $titulo ==light {
+        width: 100%;
+        text-align: center;
+        background-color: rgb(54, 114, 243);
+        color: rgb(240, 239, 239);
+        font-family: $font
+    }
+    }
+    
+    li {
+      text-align: center;
+      font-size: 18px;
+      list-style-type: none;
+    }
+  
+    h3 {
+      width: 100%;
+      text-align: center;
+      background-color: #4CAF50;
+      color: white;
+      font-family: $font; // Se agregó el punto y coma al final de la propiedad font-family
+    }
+  
+    .formulario {
+      background-color: #f2f2f2;
+      padding: 20px;
+      margin-top: 20px;
+      min-width: 0;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+  
+      label {
+        display: block;
+        margin-bottom: 10px;
+      }
+  
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        padding: 10px;
+        margin-bottom: 20px;
+        width: 100%;
+      }
+  
+      button[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+    }
+  }

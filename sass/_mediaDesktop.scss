@@ -1,0 +1,70 @@
+/* @media Desktop */
+@media (min-width: $desktopmi) and (max-width: $desktopma) {
+    .navbar {
+      width: 100%;
+    }
+  
+    .principal img {
+      display: grid;
+      grid-template-columns: 1fr;
+      width: 100%;
+    }
+  
+    .aboutTitulo {
+  h2 {
+    @if $titulo ==dark {
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    color: gray;
+    font-family: $font
+  } @else if $titulo ==light {
+    width: 100%;
+    text-align: center;
+    background-color: rgb(54, 114, 243);
+    color: rgb(240, 239, 239);
+    font-family: $font
+  }
+  }
+    }
+  
+    article {
+      .about {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  
+    .aboutImagen img {
+      width: 100%;
+      padding: 10px;
+    }
+  
+    .aboutImagenInfo {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  
+    /* Joyeria */
+  
+    section .joyeria {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      img {
+        width: 230px;
+      }
+    }
+  
+    /* footer */
+    .pieDePagina {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  
+    /* pagina contacto */
+    .contactoMapsInfo {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding: 20px;
+    }
+  }
+  
