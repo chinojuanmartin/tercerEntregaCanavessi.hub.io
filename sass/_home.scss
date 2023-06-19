@@ -31,10 +31,13 @@ section {
     #colgante {
       width: 100%;
       text-align: center;
-      background-color: rgb(109, 193, 241);
-      color: gray;
+      background-image: linear-gradient(rgb(54, 114, 243), rgb(162, 216, 247));
+      color: black;
       font-family: $font;
       margin-top: 10px;
+    a {text-decoration: none;
+      color: black; 
+    }
     }
   
     .joyeria {
@@ -42,6 +45,17 @@ section {
       grid-template-columns: 1fr;
       margin-top: 10px;
       text-align: center;
+  
+      .joyeriaImg {
+        transition: all 1s;
+        opacity: 0.75;
+  
+        &:hover {
+          transform: scale(1.2);
+          opacity: 1;
+          border: 2px solid #615f5f;
+        }
+      }
   
       img {
         width: auto;
@@ -105,5 +119,28 @@ section {
     color: rgb(250, 249, 249);
     text-align: center;
     padding: 20px;
-    font-family: $fontsec; // Se agregó el punto y coma al final de la propiedad font-family
+    font-family: $fontsec;
+  
+    .redes-sociales {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+  
+      img {
+        width: 24px;
+        height: 24px;
+        transition: all 0.3s;
+  
+        &:hover {
+          transform: scale(2);
+        }
+      }
+    }
+    .contacto-item {
+      a {
+      text-decoration: none;
+      color: white;
+    }
+    }
   }
