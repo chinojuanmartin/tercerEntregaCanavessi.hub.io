@@ -21,7 +21,7 @@
   } @else if $titulo ==light {
     width: 100%;
     text-align: center;
-    background-image: linear-gradient(rgb(54, 114, 243), rgb(162, 216, 247));
+    background-image: linear-gradient(rgb(156, 152, 142), rgb(197, 189, 174));
     color: rgb(240, 239, 239);
     font-family: $font
   }
@@ -55,6 +55,14 @@
       }
     }
   
+    section .joyeriaPag {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      img {
+        width: 230px;
+      }
+    }
+
     /* footer */
     .pieDePagina {
       grid-template-columns: 1fr 1fr 1fr;
@@ -62,8 +70,9 @@
   
     /* pagina contacto */
     .contactoMapsInfo {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       padding: 20px;
     }
   }

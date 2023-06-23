@@ -29,7 +29,7 @@ section #pulcera,
 section #colgante {
   width: 100%;
   text-align: center;
-  background-image: linear-gradient(rgb(54, 114, 243), rgb(162, 216, 247));
+  background-image: linear-gradient(rgb(156, 152, 142), rgb(197, 189, 174));
   color: black;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin-top: 10px;
@@ -40,28 +40,37 @@ section #colgante a {
   text-decoration: none;
   color: black;
 }
-section .joyeria {
+section .joyeria, section .joyeriaPag {
   display: grid;
   grid-template-columns: 1fr;
   margin-top: 10px;
   text-align: center;
 }
-section .joyeria .joyeriaImg {
+section .joyeria .joyeriaImg, section .joyeriaPag .joyeriaImg {
   transition: all 1s;
   opacity: 0.75;
 }
-section .joyeria .joyeriaImg:hover {
+section .joyeria .joyeriaImg:hover, section .joyeriaPag .joyeriaImg:hover {
   transform: scale(1.2);
   opacity: 1;
   border: 2px solid #615f5f;
 }
-section .joyeria img {
+section .joyeria img, section .joyeriaPag img {
   width: auto;
 }
-section .joyeria p {
-  color: lightblue;
+section .joyeria p, section .joyeriaPag p {
+  color: rgb(48, 47, 47);
   font-size: 14px;
   line-height: 0.5;
+}
+section .joyeria .joyeriaCarrito, section .joyeriaPag .joyeriaCarrito {
+  width: 20px;
+  height: auto;
+  border: 1px solid rgb(143, 178, 189);
+  background-color: rgb(143, 178, 189);
+}
+section .joyeria .joyeriaCarrito:hover, section .joyeriaPag .joyeriaCarrito:hover {
+  filter: brightness(150%);
 }
 
 /* Suscripcion */
@@ -108,11 +117,12 @@ section .suscripcion form button:hover {
   text-align: center;
   padding: 20px;
   font-family: "Times New Roman", Times, serif;
+  margin-top: 10px;
 }
 .pieDePagina .redes-sociales {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-content: start;
   gap: 15px;
 }
 .pieDePagina .redes-sociales img {
@@ -135,7 +145,7 @@ section .suscripcion form button:hover {
 .contacto h2 {
   width: 100%;
   text-align: center;
-  background-image: linear-gradient(rgb(54, 114, 243), rgb(162, 216, 247));
+  background-image: linear-gradient(rgb(156, 152, 142), rgb(197, 189, 174));
   color: rgb(240, 239, 239);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -190,7 +200,7 @@ section .suscripcion form button:hover {
   article .aboutTitulo h2 {
     width: 100%;
     text-align: center;
-    background-image: linear-gradient(rgb(54, 114, 243), rgb(162, 216, 247));
+    background-image: linear-gradient(rgb(156, 152, 142), rgb(197, 189, 174));
     color: rgb(240, 239, 239);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
@@ -229,7 +239,7 @@ section .suscripcion form button:hover {
   .about h2 {
     width: 100%;
     text-align: center;
-    background-image: linear-gradient(rgb(54, 114, 243), rgb(162, 216, 247));
+    background-image: linear-gradient(rgb(156, 152, 142), rgb(197, 189, 174));
     color: rgb(240, 239, 239);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
@@ -247,7 +257,7 @@ section .suscripcion form button:hover {
   .aboutTitulo h2 {
     width: 100%;
     text-align: center;
-    background-image: linear-gradient(rgb(54, 114, 243), rgb(162, 216, 247));
+    background-image: linear-gradient(rgb(156, 152, 142), rgb(197, 189, 174));
     color: rgb(240, 239, 239);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
@@ -271,14 +281,22 @@ section .suscripcion form button:hover {
   section .joyeria img {
     width: 230px;
   }
+  section .joyeriaPag {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  section .joyeriaPag img {
+    width: 230px;
+  }
   /* footer */
   .pieDePagina {
     grid-template-columns: 1fr 1fr 1fr;
   }
   /* pagina contacto */
   .contactoMapsInfo {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 20px;
   }
 }/*# sourceMappingURL=main.css.map */

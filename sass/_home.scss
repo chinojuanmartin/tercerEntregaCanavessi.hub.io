@@ -31,7 +31,7 @@ section {
     #colgante {
       width: 100%;
       text-align: center;
-      background-image: linear-gradient(rgb(54, 114, 243), rgb(162, 216, 247));
+      background-image: linear-gradient(rgb(156, 152, 142), rgb(197, 189, 174));
       color: black;
       font-family: $font;
       margin-top: 10px;
@@ -40,7 +40,7 @@ section {
     }
     }
   
-    .joyeria {
+    .joyeria, .joyeriaPag {
       display: grid;
       grid-template-columns: 1fr;
       margin-top: 10px;
@@ -56,15 +56,26 @@ section {
           border: 2px solid #615f5f;
         }
       }
-  
-      img {
+
+       img {
         width: auto;
       }
   
       p {
-        color: map-get($bgColor, celeste);
+        color: map-get($bgColor, gris);
         font-size: map-get($tamano, grande);
         line-height: 0.5;
+      }
+    
+      .joyeriaCarrito {
+        width: 20px;
+        height: auto;
+        border: 1px solid rgb(143, 178, 189);
+        background-color: rgb(143, 178, 189);
+      }
+
+      .joyeriaCarrito:hover {
+        filter: brightness(150%); 
       }
     }
   }
@@ -120,11 +131,12 @@ section {
     text-align: center;
     padding: 20px;
     font-family: $fontsec;
+    margin-top: 10px;
   
     .redes-sociales {
       display: flex;
       justify-content: center;
-      align-items: center;
+      align-content: start;
       gap: 15px;
   
       img {
