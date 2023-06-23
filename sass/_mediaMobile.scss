@@ -82,5 +82,9 @@
         font-family: $font
     }
       }
+      .aboutInfo {
+        max-height: 400px; 
+        overflow: auto; 
+      }
     }
   }

@@ -32,7 +32,7 @@
       .about {
         display: grid;
         grid-template-columns: 1fr 1fr;
-      }
+     }
     }
   
     .aboutImagen img {
@@ -43,8 +43,14 @@
     .aboutImagenInfo {
       display: flex;
       flex-wrap: wrap;
+
     }
-  
+
+    .aboutInfo {
+      max-height: 400px; 
+      overflow: auto; 
+    }
+   
     /* Joyeria */
   
     section .joyeria {
