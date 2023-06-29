@@ -4,8 +4,8 @@
   box-sizing: border-box;
 }
 
-section .principal img {
-  width: 300px;
+.principal img {
+  width: 100%;
   height: auto;
 }
 
@@ -14,6 +14,7 @@ article .about {
   display: grid;
   grid-template-columns: 1fr;
   width: 100%;
+  background-color: rgb(218, 216, 213);
 }
 article .about .aboutBoton {
   display: inline-block;
@@ -29,7 +30,7 @@ section #pulcera,
 section #colgante {
   width: 100%;
   text-align: center;
-  background-image: linear-gradient(rgb(156, 152, 142), rgb(197, 189, 174));
+  background-image: linear-gradient(rgb(156, 152, 142), rgb(221, 221, 221));
   color: black;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin-top: 10px;
@@ -71,6 +72,22 @@ section .joyeria .joyeriaCarrito, section .joyeriaPag .joyeriaCarrito {
 }
 section .joyeria .joyeriaCarrito:hover, section .joyeriaPag .joyeriaCarrito:hover {
   filter: brightness(150%);
+}
+section .joyeriaPage {
+  display: flex;
+  justify-content: center;
+}
+section .joyeriaPage .joyeriaPageBoton {
+  display: flex;
+  justify-content: center;
+  color: rgb(61, 54, 54);
+  padding: 5px 15px;
+  margin-top: 20px;
+  border-radius: 4px;
+  text-decoration: none;
+  max-width: 100px;
+  background-color: rgb(170, 165, 165);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
 
 /* Suscripcion */
@@ -145,7 +162,7 @@ section .suscripcion form button:hover {
 .contacto h2 {
   width: 100%;
   text-align: center;
-  background-image: linear-gradient(rgb(156, 152, 142), rgb(197, 189, 174));
+  background-image: linear-gradient(rgb(156, 152, 142), rgb(221, 221, 221));
   color: rgb(240, 239, 239);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -192,15 +209,10 @@ section .suscripcion form button:hover {
 
 /* @media mobile */
 @media screen and (max-width: 480px) {
-  .principal img {
-    display: grid;
-    grid-template-columns: 1fr;
-    width: 100%;
-  }
   article .aboutTitulo h2 {
     width: 100%;
     text-align: center;
-    background-image: linear-gradient(rgb(156, 152, 142), rgb(197, 189, 174));
+    background-image: linear-gradient(rgb(156, 152, 142), rgb(221, 221, 221));
     color: rgb(240, 239, 239);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
@@ -220,6 +232,7 @@ section .suscripcion form button:hover {
     text-align: center;
     line-height: 1.2;
     font-family: "Times New Roman", Times, serif;
+    padding: 5px;
   }
   article .about .aboutInfo .aboutBoton a {
     color: white;
@@ -239,7 +252,7 @@ section .suscripcion form button:hover {
   .about h2 {
     width: 100%;
     text-align: center;
-    background-image: linear-gradient(rgb(156, 152, 142), rgb(197, 189, 174));
+    background-image: linear-gradient(rgb(156, 152, 142), rgb(221, 221, 221));
     color: rgb(240, 239, 239);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
@@ -249,7 +262,7 @@ section .suscripcion form button:hover {
   }
 }
 /* @media Desktop */
-@media (min-width: 481px) and (max-width: 1400px) {
+@media (min-width: 481px) and (max-width: 1440px) {
   .navbar {
     width: 100%;
   }
@@ -261,7 +274,7 @@ section .suscripcion form button:hover {
   .aboutTitulo h2 {
     width: 100%;
     text-align: center;
-    background-image: linear-gradient(rgb(156, 152, 142), rgb(197, 189, 174));
+    background-image: linear-gradient(rgb(156, 152, 142), rgb(221, 221, 221));
     color: rgb(240, 239, 239);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }

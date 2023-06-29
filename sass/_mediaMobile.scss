@@ -1,11 +1,6 @@
 /* @media mobile */
 @media screen and (max-width: $mobile) {
-    .principal img {
-      display: grid;
-      grid-template-columns: 1fr;
-      width: 100%;
-    }
-  
+
     article {
       .aboutTitulo {
         h2 {
@@ -18,7 +13,7 @@
         } @else if $titulo ==light {
           width: 100%;
           text-align: center;
-          background-image: linear-gradient(rgb(156, 152, 142), rgb(197, 189, 174));
+          background-image: linear-gradient(rgb(156, 152, 142), rgb(221, 221, 221));
           color: rgb(240, 239, 239);
           font-family: $font
       }
@@ -43,7 +38,8 @@
           margin-right: auto;
           text-align: center;
           line-height: 1.2;
-          font-family: $fontsec; // Se agregó el punto y coma al final de la propiedad font-family
+          font-family: $fontsec; 
+          padding: 5px;
   
           .aboutBoton a {
             color: white;
@@ -77,7 +73,7 @@
       } @else if $titulo ==light {
         width: 100%;
         text-align: center;
-        background-image: linear-gradient(rgb(156, 152, 142), rgb(197, 189, 174));
+        background-image: linear-gradient(rgb(156, 152, 142), rgb(221, 221, 221));
         color: rgb(240, 239, 239);
         font-family: $font
     }

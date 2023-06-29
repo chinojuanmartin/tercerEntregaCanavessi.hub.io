@@ -1,9 +1,9 @@
-section {
-    .principal {
-      img {
-        width: 300px;
-        height: auto;
-      }
+
+
+.principal {
+    img {
+      width: 100%; 
+      height: auto;
     }
   }
   
@@ -13,7 +13,8 @@ section {
       display: grid;
       grid-template-columns: 1fr;
       width: 100%;
-  
+      background-color: rgb(218, 216, 213);
+        
       .aboutBoton {
         display: inline-block;
         background-color: black;
@@ -31,7 +32,7 @@ section {
     #colgante {
       width: 100%;
       text-align: center;
-      background-image: linear-gradient(rgb(156, 152, 142), rgb(197, 189, 174));
+      background-image: linear-gradient(rgb(156, 152, 142), rgb(221, 221, 221));
       color: black;
       font-family: $font;
       margin-top: 10px;
@@ -55,7 +56,7 @@ section {
           opacity: 1;
           border: 2px solid #615f5f;
         }
-      }
+        }
 
        img {
         width: auto;
@@ -76,6 +77,24 @@ section {
 
       .joyeriaCarrito:hover {
         filter: brightness(150%); 
+      }
+    }
+    
+    .joyeriaPage {
+      display: flex;
+      justify-content: center;
+
+       .joyeriaPageBoton {
+        display: flex;
+        justify-content: center;
+        color: rgb(61, 54, 54);
+        padding: 5px 15px;
+        margin-top: 20px;
+        border-radius: 4px;
+        text-decoration: none;
+        max-width: 100px;
+        background-color: rgb(170, 165, 165);
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
       }
     }
   }

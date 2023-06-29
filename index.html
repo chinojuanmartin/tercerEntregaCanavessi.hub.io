@@ -13,22 +13,27 @@
     
     <link rel="shortcut icon" href="./img/Chicana-Favicom.png" type="image/x-icon">
      <link rel="stylesheet" href="./sass/main.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
 </head>
 
 <body>
-<!-- bootstrap navbar -->
+
 <nav class="navbar navbar-expand-lg" style="background: linear-gradient(to right, #bbb9b9, #574b4b);">
     <div class="container-fluid" style="font-family: Verdana, Geneva, Tahoma, sans-serif, sans-serif;">
-      <a class="navbar-brand" href="#" style="font-size: 20px; font-weight: bold;">Chicana</a>
+      <a class="navbar-brand" href="#">
+        <img src="./img/Logo.png" alt="logo" style="width: 70px;">
+      </a>  
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
+          <li class="nav-item" style="font-family: Verdana, Geneva, Tahoma, sans-serif, sans-serif;">
             <a class="nav-link active" aria-current="page" href="#aboutTitulo">Nosotros</a>
           </li>
-          <li class="nav-item dropdown">
+          <li class="nav-item dropdown" style="font-family: Verdana, Geneva, Tahoma, sans-serif, sans-serif;">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Joyeria
             </a>
@@ -41,7 +46,7 @@
                 <a class="nav-link" href="./Paginas/Contacto.html">Contactanos</a>
               </li>
             </ul>
-        <form class="d-flex" role="search">
+            <form class="d-flex" role="search">
           <input class="form-control" type="text" placeholder="Buscar" aria-label="Search" style="background-color: #faf8f8; border: 1px solid #ccc; color: #333; font-family: Verdana, Geneva, Tahoma, sans-serif, sans-serif; padding: 10px;">
           <button class="btn btn-outline-success" type="submit" style="background-color: black; color: #b6b4b4; border: none; padding: 10px 20px; font-family: Verdana, Geneva, Tahoma, sans-serif, sans-serif; cursor: pointer;">Buscar</button>
         </form>
@@ -49,8 +54,10 @@
     </div>
   </nav>   
 
-  <section class="principal">
-    <img src="./img/Img-Home-Principal2.png" alt="imagen principal de Chicana">
+   <section class="principal">
+    <div class="image-container">
+      <img src="./img/Img-Home-Principal.jpg" alt="imagen principal de Chicana">
+    </div>
   </section>
 
   <article>
@@ -69,7 +76,7 @@
   </article>
   
   <section>
-    <h2 id="anillo"> <a href="./Paginas/anillos.html">Anillos</a></h2>
+    <h2 id="anillo"> Anillos</h2>
     <div  class="joyeria">
     <div>
       <img src="./img/Anillo1.png" alt="Anillo de plata uno" class="joyeriaImg" >
@@ -85,9 +92,12 @@
       <p>13.000$</p>
       <a href="https://www.mercadopago.com" target="_blank"><img src="./img/carrito.png" alt="icono de compra" class="joyeriaCarrito"></a>
    </div>
- </div>
-  
- <h2 id="pulcera"> <a href="./Paginas/pulceras.html">Pulceras</a></h2>
+  </div>
+  <div class="joyeriaPage">
+    <a class="joyeriaPageBoton" href="./Paginas/anillos.html">→</a>
+  </div>
+    
+ <h2 id="pulcera"> Pulceras</h2>
  <div  class="joyeria">
  <div class>
   <img src="./img/Pulcera1.png" alt="Pulcera de plata uno" class="joyeriaImg">
@@ -104,8 +114,12 @@
    <a href="https://www.mercadopago.com" target="_blank"><img src="./img/carrito.png" alt="icono de compra" class="joyeriaCarrito"></a>
   </div>
 </div>
-
-  <h2 id="colgante"> <a href="./Paginas/colgantes.html">Colgantes</a></h2>
+</div>
+<div class="joyeriaPage">
+  <a class="joyeriaPageBoton" href="./Paginas/anillos.html">→</a>
+</div>
+  
+<h2 id="colgante"> Colgantes</h2>
   <div  class="joyeria">
   <div>
     <img src="./img/Colgante1.png" alt="Colgante de plata uno" class="joyeriaImg" >
@@ -121,6 +135,10 @@
   <p>15.400$</p>
   <a href="https://www.mercadopago.com" target="_blank"><img src="./img/carrito.png" alt="icono de compra" class="joyeriaCarrito"></a>
  </div>
+</div>
+</div>
+<div class="joyeriaPage">
+  <a class="joyeriaPageBoton" href="./Paginas/anillos.html">→</a>
 </div>
 </section>
 
@@ -142,10 +160,11 @@
     <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
       <img src="./img/facebook-square-logo-24.png" alt="logo de Facebook">
     </a>
+    <a href="https://wa.me/+5492213641558?text=Hola quisiera hacerte una consulta." target="_blank" rel="noopener noreferrer"><img src="./img/whatsapp-line.png" alt="logo whatsapp"></a>
     <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
       <img src="./img/youtube-logo-24.png" alt="logo de YouTube">
     </a>
-  </div>
+   </div>
   <div class="detalles-contacto">
     <div class="contacto-item">
       <img src="./img/Telefono-footer.png" alt="imagen de referencia para el Teléfono">
