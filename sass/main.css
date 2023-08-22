@@ -24,6 +24,9 @@ article .about .aboutBoton {
   margin-top: 20px;
   border-radius: 4px;
 }
+article .about .aboutBoton.aboutBoton:hover {
+  background-color: gray;
+}
 
 section #anillo,
 section #pulcera,
@@ -262,7 +265,7 @@ section .suscripcion form button:hover {
   }
 }
 /* @media Desktop */
-@media (min-width: 481px) and (max-width: 1440px) {
+@media (min-width: 992px) and (max-width: 1630px) {
   .navbar {
     width: 100%;
   }
