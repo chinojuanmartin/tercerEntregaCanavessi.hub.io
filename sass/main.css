@@ -28,9 +28,7 @@ article .about .aboutBoton.aboutBoton:hover {
   background-color: gray;
 }
 
-section #anillo,
-section #pulcera,
-section #colgante {
+section productos-container {
   width: 100%;
   text-align: center;
   background-image: linear-gradient(rgb(156, 152, 142), rgb(221, 221, 221));
@@ -38,9 +36,7 @@ section #colgante {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin-top: 10px;
 }
-section #anillo a,
-section #pulcera a,
-section #colgante a {
+section productos-container a {
   text-decoration: none;
   color: black;
 }
